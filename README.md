@@ -223,4 +223,4 @@ Secret passages:  Study ↔ Kitchen  |  Conservatory ↔ Lounge
 
 ## License
 
-Educational project. Cluedo/Clue game concept by Hasbro.
+[MIT License](LICENSE) — Cluedo/Clue game concept by Hasbro.

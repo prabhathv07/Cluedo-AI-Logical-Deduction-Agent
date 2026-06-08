@@ -201,12 +201,30 @@ Secret passages:  Study ↔ Kitchen  |  Conservatory ↔ Lounge
 
 ---
 
-## Tech
+## Description
 
-- **Language:** Python 3.6+
-- **Libraries:** `random` (standard library only)
-- **Paradigm:** Object-Oriented Programming, Knowledge-Based Systems, Logical Inference
-- **Tests:** pytest
+Cluedo AI is a fully playable, text-based implementation of the classic Cluedo (Clue) board game built in Python. The project has two layers:
+
+The **core engine** (`cluedo_game.py`) handles all fundamental game mechanics — a 3×3 mansion grid, six characters, six weapons, nine rooms, secret passages, dice-based movement, suggestion/refutation rounds, and win/elimination conditions.
+
+The **AI agent layer** (`cluedo_game_part2.py`) introduces a `KnowledgeBase` class that each AI player uses to reason about the hidden murder solution. The agent tracks every card it holds, every card shown during refutations, and every player who failed to refute a suggestion. It applies process-of-elimination inference: when all but one candidate for a card are ruled out, the AI deduces the remaining card without being told. The agent only makes an accusation when it has narrowed every category (character, weapon, room) to exactly one possibility — mimicking how a human detective reasons under uncertainty.
+
+The project demonstrates knowledge-based AI, OOP design, and logical inference implemented entirely without external libraries.
+
+---
+
+## Tools & Technologies
+
+| Category | Tool / Technology |
+|----------|-------------------|
+| **Language** | Python 3.6+ |
+| **Paradigm** | Object-Oriented Programming (OOP) |
+| **AI technique** | Knowledge-Based Reasoning, Logical Inference, Process of Elimination |
+| **Standard library** | `random` — dice rolls, card shuffling, weapon placement |
+| **Testing** | `pytest` — 11 unit tests for `KnowledgeBase` logic |
+| **Version control** | Git, GitHub |
+| **Development environment** | CLI / Terminal |
+| **No external dependencies** | Runs on any Python 3.6+ installation out of the box |
 
 ---
 

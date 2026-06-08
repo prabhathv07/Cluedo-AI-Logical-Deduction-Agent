@@ -1,0 +1,7 @@
+# Cluedo Game - Project 2 Part 2
+# Course: CS670
+# No external dependencies required - uses Python standard library only
+
+# Python Version: 3.6+
+# All required modules are part of Python standard library:
+# random (for dice rolls and card shuffling)

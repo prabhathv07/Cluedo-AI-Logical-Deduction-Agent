@@ -1,7 +1,9 @@
-# Cluedo Game - Project 2 Part 2
-# Course: CS670
-# No external dependencies required - uses Python standard library only
+# Cluedo AI — Logical Deduction Agent
+# Run game:  python cluedo_game_part2.py
+# Run tests: pytest tests/
 
-# Python Version: 3.6+
-# All required modules are part of Python standard library:
-# random (for dice rolls and card shuffling)
+# Game dependencies: Python standard library only (random module)
+# No external packages required for gameplay.
+
+# Development / testing:
+pytest>=7.0

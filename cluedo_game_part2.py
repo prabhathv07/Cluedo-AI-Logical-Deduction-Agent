@@ -73,7 +73,7 @@ class Player:
         self.eliminated = False
         
         if is_ai:
-            self.knowledge = KnowledgeBase(character)
+            self.knowledge = KnowledgeBase(character, mansion_rooms)
     
     def get_room_at_position(self, pos):
         for room_name, room_pos in mansion_rooms.items():
@@ -101,14 +101,13 @@ class Player:
         return matching_cards
 
 class KnowledgeBase:
-    def __init__(self, character_name):
+    def __init__(self, character_name, rooms):
         self.character = character_name
         self.own_cards = set()
-        room_names = list(mansion_rooms.keys()) if mansion_rooms else []
         self.possible_solution = {
             'characters': set(character_names),
             'weapons': set(weapon_names),
-            'rooms': set(room_names)
+            'rooms': set(rooms.keys())
         }
         self.player_has = {}
         self.player_not_has = {}

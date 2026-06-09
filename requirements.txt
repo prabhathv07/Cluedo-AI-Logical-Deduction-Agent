@@ -1,9 +1,7 @@
-# Cluedo AI — Logical Deduction Agent
-# Run game:  python cluedo_game_part2.py
+# Run game:  python cluedo_game.py
 # Run tests: pytest tests/
 
-# Game dependencies: Python standard library only (random module)
-# No external packages required for gameplay.
+# Gameplay has no external dependencies (Python standard library only).
 
 # Development / testing:
 pytest>=7.0

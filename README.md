@@ -4,6 +4,42 @@ A Python implementation of the classic **Cluedo (Clue)** murder mystery board ga
 
 ---
 
+## Screenshots
+
+**Game Setup** — 4 players (2 human, 2 AI), weapons randomly placed
+
+![Game Setup](docs/screenshots/01_game_setup_a.png)
+
+**Mansion Layout + Game Start**
+
+![Mansion Layout](docs/screenshots/02_mansion_and_human_turn_a.png)
+
+**Human Player Turn** — cards shown, game log, secret passage prompt
+
+![Human Turn](docs/screenshots/02_mansion_and_human_turn_b.png)
+
+**AI Turn** — KB status printed, AI uses secret passage strategically, makes suggestion, gets refuted
+
+![AI Turn](docs/screenshots/03_ai_turn_and_suggestion_a.png)
+
+**Human Suggestion** — character and weapon selection menu, refutation flow
+
+![Human Suggestion](docs/screenshots/03_ai_turn_and_suggestion_b.png)
+
+**Game Log**
+
+![Game Log](docs/screenshots/04_game_log_secret_passage_a.png)
+
+**Secret Passage Usage**
+
+![Secret Passage](docs/screenshots/04_game_log_secret_passage_b.png)
+
+**AI Wins** — KB narrows to 1 possibility per category, AI accuses correctly
+
+![AI Wins](docs/screenshots/05_ai_wins.png)
+
+---
+
 ## One-liner
 
 > Developed a complete text-based Cluedo board game with an intelligent AI player that uses a knowledge base, logical inference, and strategic movement to solve the murder mystery — supporting any combination of 3–6 human and AI players.
